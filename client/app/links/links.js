@@ -8,16 +8,6 @@ angular.module('shortly.links', [])
     $http.get('/api/links').success(function(links){
       $scope.data.links = links;
     });
-    // $http({
-    //   method: 'GET',
-    //   url: '/api/links'
-    // })
-    // .success(function(){
-    //   console.log('links.js, data------------------------> ');
-    // })
-    // .error(function(){
-    //   console.log('ERROR');
-    // });
   };
 
   $scope.getLinks();
