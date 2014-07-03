@@ -1,7 +1,8 @@
 <div id='container' ng-controller='LinksController' >
   <h1>Shortened Link Cache Retrieval</h1>
+  <input name='linkSearch' ng-model='searchLinksNThings'>
     <ul>
-      <li ng-repeat='url in data.links'>{{ url.title }}</li>
+      <li ng-repeat='url in data.links | filter: searchLinksNThings' >{{ url.title | filter:data.links.visits }}</li>
   <a href="#/shorten">Make a new shortened link</a>
 
 </div>
