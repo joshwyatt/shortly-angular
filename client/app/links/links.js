@@ -1,7 +1,6 @@
 angular.module('shortly.links', [])
 
 .controller('LinksController', function ($scope, Links, $http) {
-  //create a data property on $scope
   $scope.data = {};
 
   $scope.getLinks = function(){
