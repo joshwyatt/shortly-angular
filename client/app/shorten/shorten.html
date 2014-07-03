@@ -1,6 +1,12 @@
-<div id='container'>
-<!-- Your code here -->
-
+<div id='container' >
+  <h1>Link To Be Shortened</h1>
+  <form name="linkSubmitForm" ng-submit="addLink()">
+    <input type="url" ng-model='link.url'>
+    <button>submit link</button>
+  </form>
+  <a href='#/links'>See Your Links</a>
 </div>
+
+<!-- needs form to submit links to be shortened -->
 
 

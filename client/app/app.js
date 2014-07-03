@@ -28,8 +28,8 @@ angular.module('shortly', [
       controller: 'AuthController'
     })
     .otherwise({
-      templateUrl: 'app/auth/signup.html',
-      controller: 'AuthController'
+      templateUrl: 'app/auth/links.html',
+      controller: 'LinksController'
     });
 
     // We add our $httpInterceptor into the array

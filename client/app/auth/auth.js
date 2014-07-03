@@ -27,4 +27,14 @@ angular.module('shortly.auth', [])
         console.error(error);
       });
   };
+})
+
+.controller('ValidateController', function($scope) {
+  $scope.signIn = function(isValid){
+    if(isValid){
+      console.log('the mongods are please with this form submission');
+    }else{
+      console.log('the mongods will eat your children.....');
+    }
+  };
 });
