@@ -29,9 +29,10 @@ angular.module('shortly.auth', [])
   };
 })
 
-.controller('ValidateController', function($scope) {
-  $scope.signIn = function(isValid){
+.controller('ValidateController', function($scope, $location) {
+  $scope.validate = function(isValid){
     if(isValid){
+      $location.path('/links');
       console.log('the mongods are please with this form submission');
     }else{
       console.log('the mongods will eat your children.....');
