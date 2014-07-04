@@ -1,10 +1,13 @@
-<div id='container'>
+<div id='container' ng-controller='LinksController'>
   <h1>Shortened Link Cache Retrieval</h1>
   <input name='linkSearch' ng-model='searchLinksNThings'>
     <ul>
-      <li ng-repeat='url in data.links | filter: searchLinksNThings' >{{ url.title | filter:data.links.visits }}</li>
+      <li ng-repeat='url in data.links | filter: searchLinksNThings'> <a href="/api/links/{{ url.code }}">{{ url.title | filter:data.links.visits }}
+      </a>
+      </li>
+    </ul>
   <a class="pure-button pure-button-primary linkButton" href='#/shorten'>
     <i class="fa fa-bomb fa-lg"></i>
-  Shorten</a>
+  Go To Shortener</a>
 
 </div>

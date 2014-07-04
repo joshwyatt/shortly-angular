@@ -9,6 +9,10 @@ angular.module('shortly.links', [])
     });
   };
 
+  $scope.go = function (path) {
+    $location.path(path);
+  };
+
   $scope.getLinks();
 
 });
