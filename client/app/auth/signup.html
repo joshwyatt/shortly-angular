@@ -3,7 +3,8 @@
   <form name='signupForm' ng-submit='validate(signupForm.$valid)' novalidate>
     <input type='text' name='username' ng-model='user.username' ng-minlength='3' ng-maxlength='8' required>
     <input type='password' name='password' ng-model='user.password' ng-minlength='3' ng-maxlength='8' required>
-    <button>signup</button>
   </form>
-  <a href='#/signin'>Already have an account? Signin ...</a>
+  <a class="pure-button pure-button-primary linkButton" href='#/signin'>
+    <i class="fa fa-lemon-o fa-lg"></i>
+  Sign in</a>
 </div>
